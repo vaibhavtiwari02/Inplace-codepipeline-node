@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/mynodeapp
+hooks:
+# Install:
+  AfterInstall:
+    - location: scripts/after_install.sh
+      timeout: 120
+      runas: root
+  ApplicationStart:
+    - location: scripts/application_start.sh
+      timeout: 120
+      runas: root
+
