@@ -1,5 +1,5 @@
 #!/bin/bash
 cd /home/ubuntu/mynodeapp/
-pm2 restart app.js
+pm2 restart app
 
 
